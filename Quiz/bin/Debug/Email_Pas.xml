@@ -1,0 +1,22 @@
+﻿<AllPlayers xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quiz">
+  <Players>
+    <Player>
+      <Login>dfjsssd@gmail.com</Login>
+      <Password>54446354</Password>
+      <Points>0</Points>
+      <dataBirthday>1954-01-05T00:00:00</dataBirthday>
+    </Player>
+    <Player>
+      <Login>vovs@gmail.com</Login>
+      <Password>4545646</Password>
+      <Points>0</Points>
+      <dataBirthday>2002-07-27T00:00:00</dataBirthday>
+    </Player>
+    <Player>
+      <Login>givno@gmail.com</Login>
+      <Password>4564654</Password>
+      <Points>0</Points>
+      <dataBirthday>1999-08-08T00:00:00</dataBirthday>
+    </Player>
+  </Players>
+</AllPlayers>

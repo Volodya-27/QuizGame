@@ -1,0 +1,7 @@
+C:\Users\linec\source\repos\Quiz\Quiz\bin\Debug\Quiz.exe.config
+C:\Users\linec\source\repos\Quiz\Quiz\bin\Debug\Quiz.exe
+C:\Users\linec\source\repos\Quiz\Quiz\bin\Debug\Quiz.pdb
+C:\Users\linec\source\repos\Quiz\Quiz\obj\Debug\Quiz.csprojAssemblyReference.cache
+C:\Users\linec\source\repos\Quiz\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
+C:\Users\linec\source\repos\Quiz\Quiz\obj\Debug\Quiz.exe
+C:\Users\linec\source\repos\Quiz\Quiz\obj\Debug\Quiz.pdb
