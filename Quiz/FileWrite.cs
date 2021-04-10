@@ -63,13 +63,16 @@ namespace Quiz
                 }
             }
         }
-        public void WriteStream(string text, string a)
+        public void WriteStream(AllPlayers players)
         {
             using (FileStream file = new FileStream(path, FileMode.Truncate, FileAccess.Write))
             {
                 using (StreamWriter writer = new StreamWriter(file, Encoding.Default))
                 {
-                    writer.WriteLine(text +"\t" + a);
+                    foreach (Player item in players.Players)
+                    {
+                         writer.WriteLine(item.Login +"\t" + item.Points);
+                    }
                 }
                 
             }

@@ -36,10 +36,20 @@ namespace Quiz
         {
             if (this.Points < other.Points)
             {
-                return this.Points;
+                return 1;
+            }
+            if (this.Points > other.Points)
+            {        
+                return -1;
             }
             else
-                return other.Points;
+                return 0;
+
+          
+        }
+        public override string ToString()
+        {
+            return String.Format(this.Login, this.Points);
         }
     }
 }

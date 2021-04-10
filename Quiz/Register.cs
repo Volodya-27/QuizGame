@@ -63,7 +63,5 @@ namespace Quiz
             pl.Password = Console.ReadLine();
 
         }
-
-
     }
 }
