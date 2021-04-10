@@ -65,13 +65,13 @@ namespace Quiz
         }
         public void WriteStream(string text, string a)
         {
-            using (FileStream file = new FileStream(path, FileMode.Append, FileAccess.Write))
+            using (FileStream file = new FileStream(path, FileMode.Truncate, FileAccess.Write))
             {
                 using (StreamWriter writer = new StreamWriter(file, Encoding.Default))
                 {
                     writer.WriteLine(text +"\t" + a);
                 }
-                //writer.Close(); //закрити потік!!!
+                
             }
         }
 

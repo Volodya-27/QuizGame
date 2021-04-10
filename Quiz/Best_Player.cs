@@ -15,10 +15,11 @@ namespace Quiz
         {
             fileReadOrStream = new FileReadOrStream("BestPl.txt");
         }
-        public void Best_player_All_Time(AllPlayers players)
+        public void Best_player_All_Time(AllPlayers players) //не докінця робочий))
         {
-            players.sort_point();
-
+            
+            players.Players.Sort();
+           
             foreach (var item in players.Players)
             {
                 fileReadOrStream.WriteStream(item.Login, Convert.ToString(item.Points));

@@ -20,10 +20,12 @@ namespace Quiz
         {
             Players.Add(player);
         }
-        public void sort_point()
-        {
-            Players.Sort();
-        }
-    
+        //public void sort_point()
+        //{
+        //    Players.Sort();
+           
+        //}
+
+        
     }
 }

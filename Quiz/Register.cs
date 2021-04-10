@@ -28,8 +28,18 @@ namespace Quiz
             Console.WriteLine("\t\t\tenter Data birthday example --> 1999 07 25");
             player.dataBirthday = DateTime.Parse(Console.ReadLine());
 
-            Check_password_Email.CheckEmail(player.Login);
-            Check_password_Email.CheckPassword(player.Password);
+            if (!Check_password_Email.CheckEmail(player.Login))
+            {
+                Console.WriteLine("\t\t\tEnter login example --> user(1-9)@gmail.com");
+                player.Login = Console.ReadLine();
+            }
+
+            if(!Check_password_Email.CheckPassword(player.Password))
+            {
+                Console.WriteLine("\t\t\tenter Paswword example --> 123456(Q)werty");
+                player.Password = Console.ReadLine();
+            }
+
         }
         static public Player Log_User(Player player, AllPlayers allPlayers )
         {

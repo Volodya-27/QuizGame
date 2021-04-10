@@ -35,9 +35,11 @@ namespace Quiz
         public int CompareTo(Player other)
         {
             if (this.Points < other.Points)
-                return 1;
-            else 
-                return 0;
+            {
+                return this.Points;
+            }
+            else
+                return other.Points;
         }
     }
 }
