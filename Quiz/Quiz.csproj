@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Best_Player.cs" />
     <Compile Include="Check_password_Email.cs" />
     <Compile Include="Check_player.cs" />
     <Compile Include="FileWrite.cs" />

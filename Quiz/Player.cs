@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 namespace Quiz
 {
     
-    public class Player   // паблік для XML
+    public class Player: IComparable<Player>   // паблік для XML
     {
        
         public string Password { get; set; }
@@ -30,6 +30,14 @@ namespace Quiz
             Login = log;
             Password = pas;
             dataBirthday = data;
+        }
+
+        public int CompareTo(Player other)
+        {
+            if (this.Points < other.Points)
+                return 1;
+            else 
+                return 0;
         }
     }
 }

@@ -11,7 +11,6 @@ namespace Quiz
     class AllPlayers
     {
         [DataMember]
-
         public List<Player> Players { get; set; }
         public AllPlayers()
         {
@@ -21,6 +20,10 @@ namespace Quiz
         {
             Players.Add(player);
         }
-      
+        public void sort_point()
+        {
+            Players.Sort();
+        }
+    
     }
 }

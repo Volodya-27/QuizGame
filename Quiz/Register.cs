@@ -10,7 +10,7 @@ namespace Quiz
     {
         static public void Reg_new_User(Player player, AllPlayers allPlayers)
         {
-            Console.WriteLine("Enter login example --> user(1-9)@gmail.com");
+            Console.WriteLine("\t\t\tEnter login example --> user(1-9)@gmail.com");
             player.Login = Console.ReadLine();
            
             if (Check_player.Check(player, allPlayers))
@@ -23,9 +23,9 @@ namespace Quiz
                 return;
             }
             
-            Console.WriteLine("enter Paswword example --> 123456(Q)werty");
+            Console.WriteLine("\t\t\tenter Paswword example --> 123456(Q)werty");
             player.Password = Console.ReadLine();
-            Console.WriteLine("enter Data birthday example --> 1999 07 25");
+            Console.WriteLine("\t\t\tenter Data birthday example --> 1999 07 25");
             player.dataBirthday = DateTime.Parse(Console.ReadLine());
 
             Check_password_Email.CheckEmail(player.Login);
@@ -43,9 +43,17 @@ namespace Quiz
                 Console.WriteLine("You no Sing");
                 Register.Reg_new_User(player, allPlayers);
             }
-
             return t;
         }
+        static public void  ChacheLogPassword(Player pl)
+        {
+            Console.WriteLine("Enter login example --> user(1-9)@gmail.com");
+            pl.Login = Console.ReadLine();
+            Console.WriteLine("enter Paswword example --> 123456(Q)werty");
+            pl.Password = Console.ReadLine();
+
+        }
+
 
     }
 }
