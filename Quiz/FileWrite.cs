@@ -74,7 +74,6 @@ namespace Quiz
                          writer.WriteLine(item.Login +"\t" + item.Points);
                     }
                 }
-                
             }
         }
 

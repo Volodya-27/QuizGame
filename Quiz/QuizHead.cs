@@ -9,7 +9,7 @@ namespace Quiz
 {
     class QuizHead
     {
-        public void AnswersToQuestions(string path, List<string> srt, List<string> answer, Player players)
+        public void AnswersToQuestions(string path, List<string> srt, List<string> answer, ref Player players)
         {
             string a = "";
             Console.OutputEncoding = System.Text.Encoding.GetEncoding(1251);

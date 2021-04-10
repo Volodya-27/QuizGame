@@ -67,7 +67,7 @@ namespace Quiz
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        quizHead.AnswersToQuestions("Quiz_answer.txt", srt, answer, player);
+                        quizHead.AnswersToQuestions("Quiz_answer.txt", srt, answer,ref player);
                         best_Player.Best_player_All_Time(allPlayers);
                         Start_timer();
                         break;
@@ -86,10 +86,11 @@ namespace Quiz
                 file.Writeplayer(allPlayers);
                 Console.Clear();
                 Console.WriteLine("Choose\n 1 - Start quiz\n2 - Show best Players all time\n3 - Change password\n4 - Exit");
+                
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        quizHead.AnswersToQuestions("Quiz_answer.txt", srt, answer, player);
+                        quizHead.AnswersToQuestions("Quiz_answer.txt", srt, answer,ref r);
                         best_Player.Best_player_All_Time(allPlayers);
                         Start_timer();
                         break;
